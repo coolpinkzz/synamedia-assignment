@@ -16,7 +16,6 @@ app.use(cors());
 
 connectDB();
 
-app.use(express.json()); // Middleware to parse JSON
 app.use("/api", reservationRoutes);
 
 const server = http.createServer(app);
